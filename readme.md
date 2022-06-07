@@ -1,0 +1,71 @@
+# Web Based Voting System
+
+## Features
+
+- SPA
+
+### Admin Panel
+
+- Login (API - Authentication / Passport)
+- Start Election 
+- View Election Result
+- Stop Election
+- View Election Final Result
+- Position (CRUD)
+- Party list (CRUD)
+- Voter (CRUD)
+- Nominee (CRUD) (Also Contains Picture, Motto and Description)
+- Update Account
+- Manage Account - (Sub Admin Can't access this)
+- Logout
+
+### Voter Panel
+
+- Login Using Their Unique Student ID
+- Can See Candidate/Nominee Details
+- Vote (Can only access when election started)
+- Result (Can only access when she/he already vote)
+- Logout
+
+
+## Language Used
+
+- PHP 5 (Note: This is not working on PHP v8 or higher)
+- Laravel 5.4 (Php Framework)
+- HTML
+- CSS
+- Javascript
+- VueJS (Javascript Framework)
+- MySQL
+
+## Requirements
+
+- PHP 5 or higher ()
+- MySQL
+- Composer (To install Laravel and Other Dependencies)
+- NPM (To Compile Vue Components)
+
+## Setting UP
+
+1. Copy the folder Voting-System in your www folder
+2. Run `cd Voting-System`
+3. Run `cp .env.example .env` or rename .env.example to .env
+4. Open .env file and Setup your database connection
+5. Run `composer install`
+6. Run `php artisan migrate --seed`
+7. Run `php artisan storage:link`
+8. Run `php artisan key:generate`
+9. Run `php artisan passport:install`
+10. Finally run `php artisan serve`
+
+### Note
+
+The Default user for admin is:
+
+email: lenard.mangayayam@voting-system.com
+password: admin
+
+You can change it in .env file
+
+### System Demo
+You can watch the System Demo [here](https://youtu.be/dsEoONiovdA).
